@@ -11,12 +11,12 @@ function playGame(){
         let userChoice = getHumanChoice()
         let machineChoice = generateComputerChoice()
         message = playRound(userChoice,machineChoice)
-        console.log(
+        alert(
             `Round ${i+1}!\n
             your choice: ${userChoice}\n
             machine choice: ${machineChoice}\n
             result: ${message}\n
-            score: you:${userScore} vs machine${machineScore}`
+            score: you:${userScore} vs machine: ${machineScore}`
         )
     }
 
